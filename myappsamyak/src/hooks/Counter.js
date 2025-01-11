@@ -20,20 +20,20 @@
 
 // export default Counter;
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-const Counter = () => {
-    const [name, setName] = useState('Ram');
+// const Counter = () => {
+//     const [name, setName] = useState('Ram');
 
-    const changeName = () =>{
-        setName('Shyam');
-    };
-  return (
-    <>
-       <h1>My name is : {name}</h1>
-       <button onClick={changeName}>Change name..</button>
-    </>
-  );
-}
+//     const changeName = () =>{
+//         setName('Shyam');
+//     };
+//   return (
+//     <>
+//        <h1>My name is : {name}</h1>
+//        <button onClick={changeName}>Change name..</button>
+//     </>
+//   );
+// }
 
-export default Counter
+// export default Counter

@@ -1,5 +1,6 @@
 import Counter from './hooks/Counter';
 import State from './hooks/State';
+import UseEff from './hooks/UseEff';
 function App() {
   return (
   <>
@@ -8,8 +9,11 @@ function App() {
     {/* <ListRendering></ListRendering>
     <ClassCompo></ClassCompo> */}
     {/* <State></State> */}
+{/* 
+    <Counter></Counter> */}
 
-    <Counter></Counter>
+    {/* <State></State> */}
+    <UseEff/>
   </>
   );
 }
