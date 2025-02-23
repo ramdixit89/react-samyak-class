@@ -1,21 +1,22 @@
-import Counter from './hooks/Counter';
-import State from './hooks/State';
-import UseEff from './hooks/UseEff';
-function App() {
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Products from './components/Products';
+import Cart from './components/Cart';
+import Home from './components/Home';
+import Header from './components/Header';
+const App = () => {
   return (
-  <>
-    <h1>App Component</h1>
-    {/* <Parent></Parent> */}
-    {/* <ListRendering></ListRendering>
-    <ClassCompo></ClassCompo> */}
-    {/* <State></State> */}
-{/* 
-    <Counter></Counter> */}
-
-    {/* <State></State> */}
-    <UseEff/>
-  </>
-  );
+    <>
+      <BrowserRouter>
+      <Header></Header>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/cart' element={<Cart/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
 
 export default App;
